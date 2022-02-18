@@ -1,0 +1,156 @@
+
+
+/* PLAY BTN START */
+.playBtn{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.playBtn a {
+    display: inline-block;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 70px;
+    color: tomato;
+    position: relative;
+}
+.playBtn a::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    height: 65px;
+    width: 65px;
+    border: 4px double rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: playbtn 1s ease infinite ;
+
+}
+.playBtn a::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    height: 50px;
+    width: 50px;
+    border: 4px double rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: playbtn 1s ease infinite;
+}
+@keyframes playbtn {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+/* PLAY BTN END */
+
+/* PLAY BTN 2 START */
+.playBtn2{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+.playBtn2 a {
+    display: inline-block;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 70px;
+    color: tomato;
+    position: relative;
+}
+.playBtn2 a::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    animation: playbtn 1s ease infinite ;
+
+}
+@keyframes playbtn {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+/* PLAY BTN 2 END */
+
+
+
+/* IMG-ANIMATION START */
+.imgDiv {
+    height: 402px;
+    width: 602px;
+    margin: auto;
+    border: 2px solid rgb(10, 170, 18);
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+.imgDiv .img{
+    height: 200px;
+    width: 200px; 
+    position: relative;
+    background: url(./img/filename1.jpg) no-repeat;
+    animation: img-animation 15s ease infinite;
+
+}
+@keyframes img-animation{
+    0%{
+        top: 0;
+        left: 0;
+        background: url(./img/filename1.jpg) no-repeat;  
+    }
+    25%{
+        top: 0;
+        left: 400px;
+        background: url(./img/filename2.jpg) no-repeat;  
+    }
+    50%{
+        top:200px;
+        left: 400px;
+        background: url(./img/filename3.png) no-repeat;  
+    }
+    75%{
+        top:200px;
+        left: 0px;
+        background: url(./img/filename4.jpg) no-repeat;  
+    }
+    100%{
+        top:0px;
+        left: 0px;
+        background: url(./img/filename5.jpg) no-repeat;  
+    }
+}
+/* IMG-ANIMATION END */
